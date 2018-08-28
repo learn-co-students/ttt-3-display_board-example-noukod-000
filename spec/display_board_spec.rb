@@ -1,3 +1,4 @@
+
 require_relative '../lib/display_board'
 
 describe '/lib/display_board.rb' do
@@ -11,11 +12,11 @@ describe '/lib/display_board.rb' do
 
       expect(output).to include("   ")
     end
-    
+
     it 'separates cells with a | character' do
       output = capture_puts{ display_board }
 
-      expect(output).to include("   |   ")      
+      expect(output).to include("   |   ")
     end
 
     it 'prints an 3 cell row' do
